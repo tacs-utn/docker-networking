@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  gateway:
+    container_name: gateway
+    image: nginx/unit:1.23.0-go1.15
+    ports:
+     - 80
+  backend-for-frontend:
+    container_name: backend-for-frontend
+    image: tomcat:10-jdk16
+    ports:
+     - 8080
+  backend:
+    container_name: backend
+    image: tomcat:10-jdk16
+    ports:
+     - 8080
+  database:
+    container_name: database
+    image: tomcat:10-jdk16
+    ports:
+     - 8080
