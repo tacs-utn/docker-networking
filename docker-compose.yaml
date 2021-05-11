@@ -4,7 +4,7 @@ services:
     container_name: gateway
     image: tomcat:10-jdk16
     ports:
-     - 80:80
+     - 80:8080
   backend-for-frontend:
     container_name: backend-for-frontend
     image: tomcat:10-jdk16
