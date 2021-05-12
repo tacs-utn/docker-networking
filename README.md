@@ -44,7 +44,7 @@ docker exec database ip r
 
 ```
 docker-compose -f docker-compose-network.yaml up -d
-docker scale backend-for-frontend=5 backend=3
+docker-compose scale backend-for-frontend=5 backend=3
 ```
 
 check different ips on service discovery balancing:
