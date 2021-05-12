@@ -1,5 +1,5 @@
 # docker-networking
-An example for show how to use docker networking
+An example for showing how to use docker networking
 
 ### All containers running in the default network:
 
