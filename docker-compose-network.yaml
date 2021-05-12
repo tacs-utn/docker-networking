@@ -8,21 +8,21 @@ services:
     networks:
       - frontend
   backend-for-frontend:
-    container_name: backend-for-frontend
     image: tomcat:10-jdk16
     networks:
       - frontend
       - backend
   backend:
-    container_name: backend
     image: tomcat:10-jdk16
     networks:
       - backend
+      - backend-database
   database:
     container_name: database
     image: tomcat:10-jdk16
     networks:
-      - backend
+      - backend-database
 networks:
   frontend:
   backend:
+  backend-database:
