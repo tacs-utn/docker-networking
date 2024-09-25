@@ -2,13 +2,13 @@ version: "3.3"
 services:
   gateway:
     container_name: gateway
-    image: tomcat:10-jdk16
+    image: tomcat:10.0.10-jdk16-openjdk-buster
     ports:
      - 80:8080
   backend-for-frontend:
-    image: tomcat:10-jdk16
+    image: tomcat:10.0.10-jdk16-openjdk-buster
   backend:
-    image: tomcat:10-jdk16
+    image: tomcat:10.0.10-jdk16-openjdk-buster
   database:
     container_name: database
-    image: tomcat:10-jdk16
+    image: tomcat:10.0.10-jdk16-openjdk-buster
